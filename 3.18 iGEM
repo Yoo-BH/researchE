@@ -1,0 +1,73 @@
+---
+title: "21.03.18 iGEM"
+output: html_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Team name : TU_Kaiserslautern
+
+## Title : Revolutionizing plastic degradation by introducing Chlamydomonas reinhardtii as a eukaryotic secretion platform
+
+### wiki : <https://2019.igem.org/Team:TU_Kaiserslautern>
+
+### problem : plastic degradation
+
+### solution : use Chlamydomonas reinhardtii
+
+## part
+
+| Name         |      Type      |                                    Description                                     |
+|:-------------|:--------------:|:----------------------------------------------------------------------------------:|
+| BBa_K3002000 |     Coding     |        Spectinomycin Resistance for Chlamydomonas reinhardtii (Phytobrick)         |
+| BBa_K3002004 |     Coding     |             Wildtype PETase for Chlamydomonas reinhardtii (Phytobrick)             |
+| BBa_K3002005 |     Coding     |         Wildtype MHETase for Chlamydomonas reinhardtii Part 1 (Phytobrick)         |
+| BBa_K3002014 |     Coding     |              Mutant PETase for Chlamydomonas reinhardtii (Phytobrick)              |
+| BBa_K3002029 |     Coding     |         Wildtype MHETase for Chlamydomonas reinhardtii Part 2 (Phytobrick)         |
+| BBa_K3002037 |     Coding     |            Wildtype MHETase for Chlamydomonas reinhardtii (Phytobrick)             |
+| BBa_K3002100 |   Composite    |                Level 1 - Mutant PETase + cCA + SP20 HA (Phytobrick)                |
+| BBa_K3002101 |   Composite    |                     Level 1 -- Mutant PETase + HA (Phytobrick)                     |
+| BBa_K3002102 |   Composite    | Level 1 - Spectinomycin Resistance Gene for Chlamydomonas reinhardtii (Phytobrick) |
+| BBa_K3002103 |   Composite    |                   Level 1 -- Wildtype PETase + His (Phytobrick)                    |
+| BBa_K3002104 |   Composite    |                 Level 1 -- Wildtype PETase + cCA + HA (Phytobrick)                 |
+| BBa_K3002105 |   Composite    |                     Level 1 -- Mutant PETase + HA (Phytobrick)                     |
+| BBa_K3002106 |   Composite    |                  Level 1 -- Mutant PETase + cCA + HA (Phytobrick)                  |
+| BBa_K3002107 |   Composite    |                  Level 1 -- Mutant PETase + GLE + HA (Phytobrick)                  |
+| BBa_K3002108 |   Composite    |                  Level 1 - Mutant PETase + ARS + HA (Phytobrick)                   |
+| BBa_K3002109 |   Composite    |                Level 1 - Mutant PETase + cCA + SP20HA (Phytobrick)                 |
+| BBa_K3002110 |   Composite    |                Level 1 - Mutant PETase + GLE + SP20HA (Phytobrick)                 |
+| BBa_K3002111 |   Composite    |                      Level 1 -- Mutant PETase + ARS + sp20-HA                      |
+| BBa_K3002112 |   Composite    |                              Level 1 -- MHETase + HA                               |
+| BBa_K3002113 |   Composite    |                           Level 1 -- MHETase + cCA + HA                            |
+| BBa_K3002114 |   Composite    |                         Level 1 -- MHETase + cCA + sp20-HA                         |
+| BBa_K3002119 |   Composite    |         Level 1 -- Hygromycin resistance + Tub2 Promoter + Tub2 Terminator         |
+| BBa_K3002120 |   Composite    |                     Level 1 -- Mutant PETase + cCA + sp20-His                      |
+| BBa_K3002121 |   Composite    |                     Level 1 -- Mutant PETase + ARS + sp20-His                      |
+| BBa_K3002122 |   Composite    |                     Level 1 -- Mutant PETase + GLE + sp20-His                      |
+| BBa_K3002007 | Protein_Domain |          cCA secretion signal for Chlamydomonas reinhardtii (Phytobrick)           |
+| BBa_K3002008 | Protein_Domain |          GLE secretion signal for Chlamydomonas reinhardtii (Phytobrick)           |
+| BBa_K3002009 | Protein_Domain |          ARS secretion signal for Chlamydomonas reinhardtii (Phytobrick)           |
+| BBa_K3002010 | Protein_Domain |       Sp20 HA tag for Chlamydomonas reinhardtii (Phytobrick) Dorothée Klein        |
+| BBa_K3002001 |   Regulatory   |              PSAD promoter for Chlamydomonas reinhardtii (Phytobrick)              |
+| BBa_K3002003 |   Regulatory   |              pAR promoter for Chlamydomonas reinhardtii (Phytobrick)               |
+| BBa_K3002011 |   Regulatory   |              Tub2 promoter for Chlamydomonas reinhardtii (Phytobrick)              |
+| BBa_K3002027 |   Regulatory   |              pAR promoter for Chlamydomonas reinhardtii (Phytobrick)               |
+| BBa_K3002034 |   Regulatory   |              Tub2 promoter for Chlamydomonas reinhardtii (Phytobrick)              |
+| BBa_K3002036 |   Regulatory   |              PSAD promoter for Chlamydomonas reinhardtii (Phytobrick)              |
+| BBa_K3002301 |      Scar      |                        MoClo connector A3-B1 Dorothée Klein                        |
+| BBa_K3002302 |      Scar      |                      MoClo connector B1-B2 Marlene Schlosser                       |
+| BBa_K3002303 |      Scar      |                        MoClo connector B2-B3 Dorothée Klein                        |
+| BBa_K3002304 |      Scar      |                      MoClo connector B4-B5 Marlene Schlosser                       |
+| BBa_K3002305 |      Scar      |                        MoClo connector B5-B6 Dorothée Klein                        |
+| BBa_K3002306 |      Scar      |                       L1 connector position 2 Dorothée Klein                       |
+| BBa_K3002307 |      Scar      |                      L2 connector position 1-2 Dorothée Klein                      |
+| BBa_K3002308 |      Scar      |                      L2 connector position 2-3 Dorothée Klein                      |
+| BBa_K3002017 |      Tag       |                3xHA tag for Chlamydomonas reinhardtii (Phytobrick)                 |
+| BBa_K3002018 |      Tag       |             Sp20 8xHis tag for Chlamydomonas reinhardtii (Phytobrick)              |
+| BBa_K3002028 |      Tag       |                6xHis tag for Chlamydomonas reinhardtii (Phytobrick)                |
+| BBa_K3002002 |   Terminator   |             PSAD terminator for Chlamydomonas reinhardtii (Phytobrick)             |
+| BBa_K3002006 |   Terminator   |            RPL23 terminator for Chlamydomonas reinhardtii (Phytobrick)             |
+| BBa_K3002012 |   Terminator   |             Tub2 terminator for Chlamydomonas reinhardtii (Phytobrick)             |
